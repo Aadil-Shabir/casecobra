@@ -208,7 +208,7 @@ export default function Home() {
                                     className="rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full"
                                 />
                             </div>
-                            <Phone imgSrc="/horse_phone.jpg" className="w-60" />
+                            <Phone imgSrc="/horse_phone.jpg" className="w-60" full={false} />
                         </div>
                     </div>
                     <ul className="mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit">
