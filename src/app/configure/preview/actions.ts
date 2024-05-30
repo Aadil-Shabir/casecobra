@@ -5,7 +5,7 @@ import { db } from "@/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Order } from "@prisma/client";
 
-export const createCheckoutSession = async (configId: { configId: string }) => {
+export const createCheckoutSession = async ({ configId }: { configId: string }) => {
     const configuration = await db.configuration.findUnique({
         where: { id: configId },
     });
